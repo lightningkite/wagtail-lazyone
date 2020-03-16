@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='wagtail-lazyone',
-    version='0.2.0',
+    version='0.0.1',
     author='ryan28561',
     description="Collection of wagtail blocks, styles, and templates for LazyOne Sites",
     license='MIT',
