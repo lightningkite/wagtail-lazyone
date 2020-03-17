@@ -75,7 +75,9 @@ class FourWaySplitBlock(StructBlock):
 
     class Meta:
         icon = 'list-ul'
-        template = 'lazyone_wagtail/blocks/split_block_4.html'
-        form_template = 'block/admin/blocks/split_block_4.html'
+        template = 'wagtail_lazyone/blocks/split_block_4.html'
+        form_template = 'wagtail_lazyone/admin/blocks/split_block_4.html'
 
+    def sections(self):
+        return dir(self)
 

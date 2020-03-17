@@ -1,0 +1,25 @@
+{% load wagtail_lazyone_tags %}
+{% load wagtailimages_tags %}
+{% load lazyimages_tags %}
+
+<div class="row split-block" style="background-color: {{ self.background_color }}">
+  {% for section, url, type in self|four_way_sections %}
+    <div class="col-6 col-md-3">
+      {% if type == "image" %}
+        <div class="square-aspect-container">
+          {% if url %}
+            <a href="{{ url }}" class="aspect-ratio-content">
+              {% lazy_image section max-300x300 class="lazyload lazypreload" %}
+            </a>
+          {% else %}
+          <div class="aspect-ratio-content">
+            {% lazy_image section max-300x300 class="lazyload lazypreload" %}
+          </div>
+          {% endif %}
+        </div>
+      {% else %}
+        Snippet!!
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

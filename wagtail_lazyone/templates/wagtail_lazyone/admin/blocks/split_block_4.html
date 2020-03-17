@@ -1,0 +1,37 @@
+<div class="{{ classname }}">
+  {% if help_text %}
+      <div class="sequence-member__help help"><span class="icon-help-inverse" aria-hidden="true"></span>{{ help_text }}</div>
+  {% endif %}
+  <ul class="fields extra-v-space">
+      {% include 'blog/admin/blocks/field.html' with child=children.split_type %}
+      {% include 'blog/admin/blocks/field.html' with child=children.background_color %}
+  </ul>
+
+  <ul class="fields extra-v-space">
+      {% include 'blog/admin/blocks/field.html' with child=children.first_image %}
+      {% include 'blog/admin/blocks/field.html' with child=children.first_url %}
+  </ul>
+
+  <ul class="fields extra-v-space">
+      {% include 'blog/admin/blocks/field.html' with child=children.second_image %}
+      {% include 'blog/admin/blocks/field.html' with child=children.second_url %}
+  </ul>
+
+  <ul class="fields extra-v-space">
+      {% include 'blog/admin/blocks/field.html' with child=children.third_image %}
+      {% include 'blog/admin/blocks/field.html' with child=children.third_url %}
+  </ul>
+
+  <ul class="fields extra-v-space">
+      {% include 'blog/admin/blocks/field.html' with child=children.fourth_image %}
+      {% include 'blog/admin/blocks/field.html' with child=children.fourth_url %}
+  </ul>
+
+  <ul class="fields extra-v-space">
+      {% include 'blog/admin/blocks/field.html' with child=children.first_snippet %}
+      {% include 'blog/admin/blocks/field.html' with child=children.second_snippet %}
+      {% include 'blog/admin/blocks/field.html' with child=children.third_snippet %}
+      {% include 'blog/admin/blocks/field.html' with child=children.fourth_snippet %}
+  </ul>
+
+</div>
