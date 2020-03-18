@@ -10,7 +10,7 @@ from .models import TextLinkPane
 
 class FourWaySplitBlock(StructBlock):
     WHITE = '#ffffff'
-    TAN = '#f0eaea4'
+    TAN = '#f0eae4'
     TRANSPARENT = 'transparent'
 
     COLOR_CHOICES = (
